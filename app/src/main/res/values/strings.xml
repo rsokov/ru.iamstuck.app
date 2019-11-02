@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Я застрял</string>
+    <string name="my_profile">Мой профиль</string>
+    <string name="notifications">Уведомления</string>
+    <string name="help_query">Попросить о помощи</string>
+    <string name="chat">Общий чат</string>
+    <string name="help_requests">Запросы о помощи</string>
+    <string name="edit_profile">Редактирование профиля</string>
+</resources>
