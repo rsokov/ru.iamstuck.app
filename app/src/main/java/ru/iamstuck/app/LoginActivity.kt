@@ -3,14 +3,16 @@ package ru.iamstuck.app
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import kotlinx.android.synthetic.main.activity_edit_profile.*
-import kotlinx.android.synthetic.main.activity_profile.*
 import kotlinx.android.synthetic.main.toolbar.*
-class EditProfileActivity : AppCompatActivity() {
-    private val TAG = "EditProfileActivity"
+
+class LoginActivity : AppCompatActivity() {
+    private val TAG = "LoginActivity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edit_profile)
+        header_text.setText(getString(R.string.mutual_app))
+        setContentView(R.layout.activity_login)
         Log.d(TAG, "onCreate")
     }
+
+
 }

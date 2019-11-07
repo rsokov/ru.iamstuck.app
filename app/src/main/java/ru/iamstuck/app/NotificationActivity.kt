@@ -14,5 +14,6 @@ class NotificationActivity : BaseActivity(3) {
         header_text.setText(getString(R.string.notifications))
         Log.d(TAG, "onCreate")
         setupBottomNavigation()
+        close_app()
     }
 }

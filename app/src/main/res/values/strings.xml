@@ -6,4 +6,18 @@
     <string name="chat">Общий чат</string>
     <string name="help_requests">Запросы о помощи</string>
     <string name="edit_profile">Редактирование профиля</string>
+    <string name="nickname">Ваше имя (видно всем пользователям)</string>
+    <string name="email">Email</string>
+    <string name="phone">Номер телефона</string>
+    <string name="auto_model">Модель автомобиля</string>
+    <string name="auto_vendor">Марка автомобиля</string>
+    <string name="auto_number">Госномер</string>
+    <string name="city">Населенный пункт</string>
+    <string name="contact_information">Контактная информация</string>
+    <string name="mutual_app">ВЗАИМОПОМОЩЬ НА ДОРОГАХ</string>
+    <string name="edit">Редактировать</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="SignIn">Войти</string>
+    <string name="SignUp">Нет аккаунта? Зарегистрируйтесь!</string>
 </resources>

@@ -3,9 +3,12 @@ package ru.iamstuck.app
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.widget.Toast
+import kotlinx.android.synthetic.main.toolbar.*
 
 
 import kotlinx.android.synthetic.main.bottom_navigation_view.*
+import kotlin.system.exitProcess
 
 abstract class BaseActivity(val navNumber: Int) : AppCompatActivity() {
     private val TAG = "BaseActivity"
@@ -45,4 +48,14 @@ abstract class BaseActivity(val navNumber: Int) : AppCompatActivity() {
         }
         bottom_navigation_view.menu.getItem(navNumber).isChecked = true
     }
+    fun close_app()
+    {
+        toolbar_btn.setOnClickListener{
+            Log.d(TAG, "toolbar_button")
+        }
+    }
+
+
+
+
 }

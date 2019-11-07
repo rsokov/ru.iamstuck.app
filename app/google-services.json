@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "904277583977",
+    "firebase_url": "https://iamstuck-aaf22.firebaseio.com",
+    "project_id": "iamstuck-aaf22",
+    "storage_bucket": "iamstuck-aaf22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904277583977:android:7c2a76270fe746d1e05af8",
+        "android_client_info": {
+          "package_name": "ru.iamstuck.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904277583977-d0ai595magpcnpjar7dsv304ah21tm8d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.iamstuck.app",
+            "certificate_hash": "80e6a273700dc2d8c6d7872da5a89c4854d73ccc"
+          }
+        },
+        {
+          "client_id": "904277583977-i9sq76si1a1pjnk5588e1viiob0qmsei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvE49eTKyW_sGoL88-LL-ThcHedzel0co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904277583977-i9sq76si1a1pjnk5588e1viiob0qmsei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

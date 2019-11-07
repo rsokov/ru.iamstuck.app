@@ -94,7 +94,7 @@
             android:minHeight="0dp"
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
-            android:text="Edit Profile"
+            android:text="@string/edit"
             android:textAllCaps="false"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@id/profile_image"

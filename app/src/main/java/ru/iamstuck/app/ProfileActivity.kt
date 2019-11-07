@@ -15,6 +15,7 @@ class ProfileActivity : BaseActivity(4) {
         header_text.setText(getString(R.string.my_profile))
         Log.d(TAG, "onCreate")
         setupBottomNavigation()
+        close_app()
 
         edit_profile_btn.setOnClickListener{
             val intent = Intent(this, EditProfileActivity::class.java)

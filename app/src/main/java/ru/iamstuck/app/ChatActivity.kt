@@ -14,5 +14,6 @@ class ChatActivity : BaseActivity(1) {
         header_text.setText(getString(R.string.chat))
         Log.d(TAG, "onCreate")
         setupBottomNavigation()
+        close_app()
     }
 }

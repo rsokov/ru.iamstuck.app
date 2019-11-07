@@ -14,5 +14,6 @@ class QueryActivity : BaseActivity(2) {
         header_text.setText(getString(R.string.help_query))
         Log.d(TAG, "onCreate")
         setupBottomNavigation()
+        close_app()
     }
 }
