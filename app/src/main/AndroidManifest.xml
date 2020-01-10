@@ -12,21 +12,24 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".activities.RegisterActivity">
         </activity>
-        <activity android:name=".EditProfileActivity">
+        <activity android:name=".activities.LoginActivity">
+            android:windowSoftInputMode="stateVisible|adjustResize"
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.EditProfileActivity">
+        </activity>
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ChatActivity"/>
-        <activity android:name=".NotificationActivity"/>
-        <activity android:name=".ProfileActivity"/>
-        <activity android:name=".QueryActivity"/>
+        <activity android:name=".activities.ChatActivity"/>
+        <activity android:name=".activities.NotificationActivity"/>
+        <activity android:name=".activities.ProfileActivity"/>
+        <activity android:name=".activities.QueryActivity"/>
     </application>
 
 </manifest>

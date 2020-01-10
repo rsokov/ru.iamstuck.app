@@ -1,10 +1,11 @@
-package ru.iamstuck.app
+package ru.iamstuck.app.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_profile.*
 import kotlinx.android.synthetic.main.toolbar.*
+import ru.iamstuck.app.R
 
 class ProfileActivity : BaseActivity(4) {
     private val TAG = "ProfileActivity"

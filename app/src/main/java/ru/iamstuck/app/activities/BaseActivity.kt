@@ -1,14 +1,13 @@
-package ru.iamstuck.app
+package ru.iamstuck.app.activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
-import android.widget.Toast
 import kotlinx.android.synthetic.main.toolbar.*
 
 
 import kotlinx.android.synthetic.main.bottom_navigation_view.*
-import kotlin.system.exitProcess
+import ru.iamstuck.app.R
 
 abstract class BaseActivity(val navNumber: Int) : AppCompatActivity() {
     private val TAG = "BaseActivity"

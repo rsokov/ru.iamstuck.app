@@ -1,11 +1,12 @@
-package ru.iamstuck.app
+package ru.iamstuck.app.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_profile.*
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar.*
+import ru.iamstuck.app.R
 
 class MainActivity : BaseActivity(0) {
     private val TAG = "MainActivity"
@@ -18,7 +19,6 @@ class MainActivity : BaseActivity(0) {
         setupBottomNavigation()
         close_app()
         mAuth = FirebaseAuth.getInstance()
-        mAuth.signOut()
 //        auth.signInWithEmailAndPassword("r.sokov@at-nn.ru", "Qwerty123")
 //            .addOnCompleteListener {
 //                if (it.isSuccessful) {
@@ -27,15 +27,24 @@ class MainActivity : BaseActivity(0) {
 //                    Log.d(TAG, "signIn: Error")
 //                }
 //            }
-
+        sign_out.setOnClickListener{
+            mAuth.signOut()
+        }
+        mAuth.addAuthStateListener {
+            if (it.currentUser == null) {
+                startActivity(Intent(this, LoginActivity::class.java))
+                finish()
+            }
+        }
     }
-//    override fun onStart() {
-//        super.onStart()
-//        if (mAuth.currentUser==null)
-//        {
-//            startActivity(Intent(this, LoginActivity::class.java))
-//            finish()
-//        }
-//    }
+
+    override fun onStart() {
+        super.onStart()
+        if (mAuth.currentUser==null)
+       {
+          startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+       }
+    }
 
 }

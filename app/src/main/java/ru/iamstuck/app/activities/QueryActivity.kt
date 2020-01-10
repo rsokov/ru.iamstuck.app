@@ -1,9 +1,9 @@
-package ru.iamstuck.app
+package ru.iamstuck.app.activities
 
 import android.os.Bundle
 import android.util.Log
-import kotlinx.android.synthetic.main.activity_profile.*
 import kotlinx.android.synthetic.main.toolbar.*
+import ru.iamstuck.app.R
 
 class QueryActivity : BaseActivity(2) {
     private val TAG = "QueryActivity"
