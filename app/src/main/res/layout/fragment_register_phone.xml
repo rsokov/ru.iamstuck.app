@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <ImageView
             android:id="@+id/person_image"
@@ -13,27 +13,26 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-            android:id="@+id/email_input"
-            style="@style/login_input"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
+    <TextView
+            android:id="@+id/register_phone_text"
+            android:text="@string/phone"
+            style="@style/register_phone_input"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/person_image" />
 
+    <EditText
+            android:id="@+id/register_phone_input"
+            style="@style/login_input"
+            android:text="+7 ("
+            android:inputType="phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_phone_text" />
     <Button
             android:id="@+id/next_btn"
             style="@style/login_btn"
             android:text="@string/nextStep"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/email_input" />
-    <Button
-            android:id="@+id/phone_register_btn"
-            style="@style/phone_login_btn"
-            android:text="@string/signUpWithPhone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/next_btn" />
+            app:layout_constraintTop_toBottomOf="@id/register_phone_input" />
 
 </android.support.constraint.ConstraintLayout>

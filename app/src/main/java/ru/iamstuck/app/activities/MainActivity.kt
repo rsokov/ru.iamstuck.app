@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.toolbar.*
 import ru.iamstuck.app.R
 
 class MainActivity : BaseActivity(0) {
-    private val TAG = "MainActivity"
+    private val TAG = this::class.java.getName()
     private lateinit var mAuth: FirebaseAuth;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,21 +30,17 @@ class MainActivity : BaseActivity(0) {
         sign_out.setOnClickListener{
             mAuth.signOut()
         }
-        mAuth.addAuthStateListener {
-            if (it.currentUser == null) {
-                startActivity(Intent(this, LoginActivity::class.java))
-                finish()
-            }
-        }
+
     }
 
     override fun onStart() {
         super.onStart()
-        if (mAuth.currentUser==null)
-       {
-          startActivity(Intent(this, LoginActivity::class.java))
-            finish()
-       }
+        mAuth.addAuthStateListener {
+            if (it.currentUser == null) {
+                startActivity(Intent(this, ComplexLoginActivity::class.java))
+                finish()
+            }
+        }
     }
 
 }

@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.bottom_navigation_view.*
 import ru.iamstuck.app.R
 
 abstract class BaseActivity(val navNumber: Int) : AppCompatActivity() {
-    private val TAG = "BaseActivity"
+    private val TAG = this::class.java.getName()
 
     fun setupBottomNavigation() {
         bottom_navigation_view.setIconSize(29f, 29f)

@@ -14,7 +14,7 @@ import ru.iamstuck.app.R
 import ru.iamstuck.app.models.User
 
 class EditProfileActivity : AppCompatActivity() {
-    private val TAG = "EditProfileActivity"
+    private val TAG = this::class.java.getName()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

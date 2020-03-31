@@ -6,7 +6,7 @@ import kotlinx.android.synthetic.main.toolbar.*
 import ru.iamstuck.app.R
 
 class NotificationActivity : BaseActivity(3) {
-    private val TAG = "NotificationActivity"
+    private val TAG = this::class.java.getName()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.toolbar.*
 import ru.iamstuck.app.R
 
 class ProfileActivity : BaseActivity(4) {
-    private val TAG = "ProfileActivity"
+    private val TAG = this::class.java.getName()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

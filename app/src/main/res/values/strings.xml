@@ -7,7 +7,7 @@
     <string name="help_requests">Запросы о помощи</string>
     <string name="edit_profile">Редактирование профиля</string>
     <string name="nickname">Ваше имя (видно всем пользователям)</string>
-    <string name="email">Email</string>
+    <string name="email">Электронная почта</string>
     <string name="phone">Номер телефона</string>
     <string name="auto_model">Модель автомобиля</string>
     <string name="auto_vendor">Марка автомобиля</string>
@@ -16,8 +16,18 @@
     <string name="contact_information">Контактная информация</string>
     <string name="mutual_app">ВЗАИМОПОМОЩЬ НА ДОРОГАХ</string>
     <string name="edit">Редактировать</string>
-    <string name="login">Логин</string>
     <string name="password">Пароль</string>
     <string name="SignIn">Войти</string>
+    <string name="SignInWithPhone">Войти по номеру телефона</string>
     <string name="SignUp">Нет аккаунта? Зарегистрируйтесь!</string>
+    <string name="correctEmail">Введите корректный Email</string>
+    <string name="correctPassword">"Длина пароля должна быть не менее 6 символов"</string>
+    <string name="enterNameAndPassword">Введите свое имя и пароль</string>
+    <string name="showError">Что-то пошло не так. Повторите попытку позднее</string>
+    <string name="nextStep">Далее</string>
+    <string name="signUpWithPhone">Регистрация по номеру телефона</string>
+    <string name="correctPhone">Введите корректный номер телефона</string>
+    <string name="verificationCodeText">Введите код доступа из СМС</string>
+    <string name="wrongCode">Неверный код подтверждения</string>
+    <string name="enterCode">Введите код доступа из SMS</string>
 </resources>
